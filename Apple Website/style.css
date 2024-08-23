@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(Fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: poppins-light;
+  src: url(Fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+/* ----------------------------- navbar ------------------------------------- */
+nav {
+  background-color: rgb(244, 245, 246);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 15px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: smaller;
+}
+nav a i {
+  font-size: 25px;
+}
+/* ---------------------- video ---------------------------------------- */
+
+.video video {
+  margin-top: 6rem;
+  padding: 0rem 3rem;
+  width: 100%;
+}
+
+/* ---------------------------- header ------------------------------- */
+.header-page-01 {
+  margin-top: 2rem;
+  background-color: rgb(244, 245, 246);
+}
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+}
+
+/* ---------- header page 2 and similar properties of header page 3 ------------ */
+.macbook,
+.iphone {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+}
+.second-header,
+.third-header {
+  position: absolute;
+  top: 10%;
+  text-align: center;
+}
+.macbook img,
+.iphone img {
+  width: 100%;
+}
+.second-header h1,
+.third-header h1 {
+  padding-top: 2rem;
+  font-size: 60px;
+  font-weight: bold;
+}
+.second-header h2,
+.third-header h2 {
+  font-size: 30px;
+  color: black;
+}
+
+.second-header .buttons .button-01,
+.button-02,
+.third-header .buttons .button-01,
+.button-02 {
+  margin-top: 1rem;
+  border-radius: 30px;
+  background-color: rgb(29, 121, 242);
+  height: 45px;
+  width: 140px;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: medium;
+}
+
+.second-header .buttons .button-02,
+.third-header .buttons .button-02 {
+  background-color: white;
+  color: rgb(29, 121, 242);
+  border: 1px solid rgb(29, 121, 242);
+  width: 100px;
+}
+.third-header .buttons .button-01:hover,
+.second-header .buttons .button-01:hover {
+  cursor: pointer;
+}
+
+.second-header .buttons .button-02:hover,
+.third-header .buttons .button-02:hover {
+  background-color: rgb(29, 121, 242);
+  color: white;
+  cursor: pointer;
+}
+
+/* ---------------------------------- header page 03 ------------------------ */
+.iphone {
+  margin-top: 2rem;
+}
+.third-header {
+  background-color: black;
+  color: white;
+}
+.third-header h2 {
+  color: white;
+}
+.third-header .buttons .button-02 {
+  height: 45px;
+  width: 140px;
+  font-size: medium;
+  background-color: black;
+}
+
+/* ------------------------------- cards setting -------------------------------- */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 10px 1rem;
+}
+.cards img {
+  width: 100%;
+  height: 100%;
+}
+.cards img {
+  height: 600px;
+}
+.cards > div {
+  position: relative;
+  text-align: center;
+}
+
+/* ---------------------------- card 1 ----------------------------------- */
+.card1-top {
+  position: absolute;
+  top: 8%;
+  left: 20%;
+}
+.card1-top h1,
+.card2-top h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+.card1-top h2,
+.card4-top h2 {
+  color: white;
+  font-size: 20px;
+}
+.card1-top .card-buttons .button1,
+.button2,
+.card2-top .card-buttons .button1,
+.button2,
+.card3-bottom .card-buttons .button1,
+.button2,
+.card4-top .card-buttons .button1,
+.button2,
+.card5-top .card-buttons .button1,
+.button2,
+.card6-top .card-buttons .button1 {
+  margin-top: 1rem;
+  height: 40px;
+  width: 120px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(29, 121, 242);
+  color: white;
+  font-size: medium;
+}
+
+.card1-top .card-buttons .button2,
+.card2-top .card-buttons .button2,
+.card3-bottom .card-buttons .button2,
+.card4-top .card-buttons .button2,
+.card5-top .card-buttons .button2 {
+  width: 80px;
+  background-color: rgb(13, 13, 13);
+  color: rgb(29, 121, 242);
+  border: 1px solid rgb(29, 121, 242);
+  margin-left: 5px;
+}
+
+.card1-top .card-buttons .button1,
+.button2:hover,
+.card2-top .card-buttons .button1,
+.button2:hover,
+.card3-bottom .card-buttons .button1,
+.button2:hover,
+.card4-top .card-buttons .button1,
+.button2:hover,
+.card5-top .card-buttons .button1,
+.button2:hover,
+.card6-top .card-buttons .button1,
+.button2:hover {
+  cursor: pointer;
+}
+.card1-top .card-buttons .button2:hover,
+.card2-top .card-buttons .button2:hover,
+.card3-bottom .card-buttons .button2:hover,
+.card4-top .card-buttons .button2:hover,
+.card5-top .card-buttons .button2:hover {
+  background-color: rgb(29, 121, 242);
+  color: white;
+}
+
+/* ------------------------- card2 --------------------------- */
+.card2-top {
+  position: absolute;
+  top: 8%;
+  left: 25%;
+}
+.card2-top h1 {
+  color: black;
+}
+.card2-top h4 {
+  font-family: poppins-light;
+  font-size: x-large;
+}
+.card2-top h5 {
+  font-family: poppins-light;
+  font-size: medium;
+  color: rgb(95, 95, 95);
+  margin-top: 5px;
+}
+.card2-top .card-buttons .button2 {
+  width: 160px;
+  height: 40px;
+  background-color: white;
+}
+
+/* ---------------------------- card3 ----------------------------------- */
+.card3-bottom {
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+}
+
+.card3 .logo img {
+  height: 40px;
+  width: 200px;
+}
+.card3-bottom h2 {
+  padding-top: 1rem;
+  color: rgb(60, 55, 55);
+  font-size: large;
+}
+
+.card3-bottom .card-buttons .button2,
+.card5-top .card-buttons .button2 {
+  background-color: transparent;
+}
+
+/* --------------------------- card 4 ---------------------------------- */
+.card4-top {
+  position: absolute;
+  top: 10%;
+  left: 33%;
+}
+
+.card4 .logo img {
+  width: 150px;
+  height: 50px;
+}
+
+/* ----------------------------- card 5 ------------------------------- */
+.card5-top,
+.card6-top {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+}
+.card5-top p,
+.card6-top p {
+  font-size: 20px;
+}
+
+.card5 .logo img,
+.card6 .logo img {
+  width: 120px;
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+.card5-top .card-buttons .button2 {
+  width: 120px;
+}
+
+/* --------------------------------- card 6 --------------------------------- */
+.card6-top .card-buttons .button1 {
+  margin-top: 1rem;
+  width: 180px;
+}
+
+/* --------------------------- caoursel ------------------------- */
+.caoursel {
+  display: flex;
+  justify-content: center;
+}
+
+/* ----------------------- footer ---------------------------------- */
+.footer {
+  background-color: rgba(245, 245, 247);
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.footer .content {
+  font-size: 13px;
+  width: 80%;
+  margin-left: 8rem;
+  padding-top: 2rem;
+}
+.footer .content p {
+  color: rgba(0, 0, 0, 0.56);
+}
+hr {
+  color: rgba(0, 0, 0, 0.56);
+}
+.lists {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.lists > div ul li {
+  list-style: none;
+  color: rgb(101, 99, 99);
+  padding-top: 5px;
+}
+.lists ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.56);
+}
+.lists ul li a:hover {
+  border-bottom: 1px solid black;
+}
+.line {
+  padding: 3rem 3rem;
+  color: rgba(0, 0, 0, 0.56);
+}
+.line a {
+  color: blue;
+}
+
+.last-line {
+  padding: 1rem 2rem;
+}
+.left {
+  display: flex;
+  justify-content: end;
+  margin-top: -25px;
+  color: rgba(0, 0, 0, 0.56);
+}
